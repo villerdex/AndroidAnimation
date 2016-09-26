@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ZoomIn"
+        android:id="@+id/btnZoomIn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="48dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zoomout"
+        android:id="@+id/btnZoomOut"
+        android:layout_alignTop="@+id/btnZoomIn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="movex"
+        android:id="@+id/btnMoveX"
+        android:layout_alignTop="@+id/btnZoomOut"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="movey"
+        android:id="@+id/btnMoveY"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/btnZoomIn"
+        android:layout_alignLeft="@+id/btnZoomIn"
+        android:layout_alignStart="@+id/btnZoomIn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bounceX"
+        android:id="@+id/btnBounceX"
+        android:layout_alignTop="@+id/btnBounceY"
+        android:layout_alignLeft="@+id/btnMoveX"
+        android:layout_alignStart="@+id/btnMoveX" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bouncey"
+        android:id="@+id/btnBounceY"
+        android:layout_alignTop="@+id/btnMoveY"
+        android:layout_alignLeft="@+id/btnZoomOut"
+        android:layout_alignStart="@+id/btnZoomOut" />
+
+</RelativeLayout>

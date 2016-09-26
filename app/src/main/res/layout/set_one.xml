@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RotateX"
+        android:id="@+id/rotateX"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="48dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RotateY"
+        android:id="@+id/rotateY"
+        android:layout_alignTop="@+id/rotateX"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rotate"
+        android:id="@+id/rotate"
+        android:layout_alignTop="@+id/rotateY"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fadein"
+        android:id="@+id/fadeIn"
+        android:layout_alignTop="@+id/fadeOut"
+        android:layout_toRightOf="@+id/fadeOut"
+        android:layout_toEndOf="@+id/fadeOut"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fadeout"
+        android:id="@+id/fadeOut"
+        android:layout_below="@+id/rotateX"
+        android:layout_toLeftOf="@+id/rotateY"
+        android:layout_toStartOf="@+id/rotateY"
+        android:layout_marginTop="31dp" />
+</RelativeLayout>
